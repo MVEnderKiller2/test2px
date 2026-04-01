@@ -1,7 +1,7 @@
 const http = require("http");
 const httpProxy = require("http-proxy");
 const url = require("url");
-
+const fs = require("fs");
 const proxy = httpProxy.createProxyServer({ changeOrigin: true });
 
 const server = http.createServer((req, res) => {
